@@ -1,0 +1,57 @@
+.title-home {
+  color: #fff;
+  font-size: 60px;
+  line-height: 120%;
+  font-weight: 400;
+  width: 90%;
+  margin-bottom: 20px;
+  text-shadow: 5px 0px 3px black;
+}
+.img-wrapper {
+  height: 100vh;
+  background-image: url("../../images/home.webp");
+  background-size: cover;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+.info-home {
+  max-width: 1000px;
+  width: 100%;
+  margin-top: 250px;
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-left: auto;
+  display: block;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.content-description {
+  text-align: justify;
+  text-justify: inter-word;
+  height: 96px;
+}
+@media screen and (max-width:800px){
+  .title-home{
+    font-size: 30px;
+  }
+}
+
+.stock_minIns{
+  color: red !important;
+  
+}
+
+.stock_min{
+  color: red !important;
+  text-align: center;
+}
+
+.stock_ok{
+  color:black;
+  text-align: center;
+}
+
+.delete_icon{
+  color: red !important;
+  cursor: pointer;
+}

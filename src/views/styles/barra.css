@@ -1,0 +1,99 @@
+.container-bar{
+	width: 100%;
+	max-width: 50px;
+	position: fixed;
+	left: 0;
+	top: 15%;
+}
+.container-bar .opt{
+	display: block;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 18px;
+	position: relative;
+	transition: all 500ms ease;
+	color: #fff;
+    border: none
+}
+
+.bar_button{
+	background: #016C37;
+	border-radius: 5px;
+	border: none;
+	padding: 0 20px;
+	height: 2rem;
+	color: white;
+}
+
+.container-bar .opt:hover{
+	background: #1c1c1c;
+}
+.container-bar .excel_inv{
+	background: #016C37;
+	border-radius: 0px 5px 5px 0px;
+    
+}
+.container-bar .excel_min{
+	background: #d83840;
+	border-radius: 0px 0px 5px 0px;
+}
+
+.container-bar #title{
+	position: absolute;
+	background: #1c1c1c;
+	padding: 5px 20px;
+	height: auto;
+	line-height: 20px;
+	text-align: center;
+	border-radius: 3px;
+	font-size: 15px;
+	top:12px; left: 0px;
+	transition: all 500ms ease;
+	opacity: 0;
+	visibility: hidden;
+	z-index: -1;
+}
+
+/* #1c1c1c */
+.container-bar .opt:hover #title{
+	opacity: 1;
+	visibility: visible;
+	left: 64px;
+}
+
+.container-bar #title:after{
+	position: absolute;
+	content: '';
+	border-left: 7px solid transparent;
+	border-right: 6px solid #1c1c1c;
+	border-top: 7px solid transparent;
+	border-bottom: 7px solid transparent;
+	right: 100%;
+	top: 8px;
+}
+
+.icon-down{
+	transition: all 0.4s;
+	transform: translateX(0%);
+	box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

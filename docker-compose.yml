@@ -1,0 +1,26 @@
+version: '3.3'
+
+services:
+  mysql:
+    image: mysql:latest
+    restart: always
+    environment:
+      - MYSQL_DATABASE=icp
+      - MYSQL_USER=
+      - MYSQL_ROOT_PASSWORD=921004_g
+      - MYSQL_PORT=3306
+    ports:
+      - 3306:3306
+    volumes:
+      - .mysql_data:/var/lib/mysql:rw
+
+  phpmyadmin:
+    image: phpmyadmin:latest
+    restart: always
+    environment:
+      - MYSQL_ROOT_PASSWORD=921004_g
+      - PMA_HOST=mysql
+    ports:
+      - 8080:80
+volumes:
+  persistent:

@@ -1,0 +1,63 @@
+.agg {
+  padding: 7px 0 5px 0;
+}
+
+.fa-circle-plus{
+    font-size: 20px;
+}
+
+.agg * {
+  list-style: none;
+}
+
+.agg li {
+  line-height: 180%;
+}
+
+label {
+  cursor: pointer;
+}
+
+.agg input[name="list"] {
+  position: absolute;
+  left: -1000em;
+}
+
+.font{
+  color: white;
+}
+
+.link{
+  border-top: 1px solid white;
+}
+
+.link{
+  width: 80%;
+  margin: 0 !important;
+  background-color: rgb(58, 57, 57);
+}
+
+.link:hover{
+  background-color: rgb(39, 37, 37);
+}
+
+interior li:first-child{
+  border-bottom: 1px solid white;
+}
+
+.agg .interior {
+  position: absolute;
+  display: none;
+  border-radius: 5px;
+  transition: all 500ms ease;
+  z-index: 1;
+  padding: 0;
+}
+
+.agg input:checked ~ ul {
+  display: block;
+}
+
+
+
+
